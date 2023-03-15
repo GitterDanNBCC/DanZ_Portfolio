@@ -31,7 +31,7 @@ body {
     z-index: 5;
     position: absolute;
     display: flex;
-    width: calc(100% - 8px);
+    width: calc(100%);
     max-width: 100%;
     padding-top: 4px;
     padding-bottom: 4px;
