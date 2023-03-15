@@ -30,9 +30,9 @@ body {
 #terminal-bar {
     z-index: 5;
     position: absolute;
-    width: 100%;
-    left: 1px;
-    max-width: calc(100% - 1px);
+    display: flex;
+    width: calc(100% - 8px);
+    max-width: 100%;
     padding-top: 4px;
     padding-bottom: 4px;
     background-color: rgb(75, 72, 72);
@@ -40,14 +40,16 @@ body {
 
 .terminal-tab {
     z-index: 6; 
-    left: calc(20% * var(--tab-position) + 2px);
-    width: calc(19%);
-    margin: 2px;
+    /* left: calc(20% * var(--tab-position) + 2px); */
+    /* width: calc(19.75%); */
+    flex-grow: 1;
     background-color: gray;
     color: white;
     text-align: center;
     display: inline-block;
     cursor: pointer;
+    margin-left: 1px;
+    margin-right: 1px;
     padding-top: 4px;
     padding-bottom: 4px;
 }
