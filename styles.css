@@ -33,21 +33,28 @@ body {
     width: 100%;
     left: 1px;
     max-width: calc(100% - 1px);
-    height: 30px;
+    padding-top: 4px;
+    padding-bottom: 4px;
     background-color: rgb(75, 72, 72);
 }
 
 .terminal-tab {
-    z-index: 6;
-    position: absolute;
+    z-index: 6; 
     left: calc(20% * var(--tab-position) + 2px);
     width: calc(19%);
-    margin-right: 2px;
+    margin: 2px;
     background-color: gray;
     color: white;
     text-align: center;
-    height: 28px;
+    display: inline-block;
     cursor: pointer;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.terminal-tab:hover {
+    z-index: 7;
+    background-color: rgb(57, 54, 54);
 }
 
 .terminal-mini {
