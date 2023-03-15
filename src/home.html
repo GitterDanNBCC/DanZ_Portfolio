@@ -1,0 +1,37 @@
+<script>
+    $(document).ready(() => {
+        $('#line2').hide();
+        $('#line3').hide();
+
+        window.setTimeout(() => {
+            $('#line2').show();
+            $('#command2').addClass('typed-text');
+        }, 5250);
+
+        window.setTimeout(() => {
+            $('#line3').show();
+            $('#line2').removeClass('active-line');
+        }, 7750);
+
+    });
+</script>
+
+<div id="line1" class="console-line active-line">
+    <div id="" class="inline-title directory">/home/DanZ/projects</div>
+    <div id="prompt1" class="inline-title prompt">:~$</div>
+    <div id="command1" class="typed-text inline-title stdin" style="--width: 315px; --time: 4s;">
+        cd DanZimmer_Portfolio
+    </div>
+    <br />
+</div>
+<div id="line2" class="console-line active-line">
+    <div id="" class="inline-title directory">~/DanZimmer_Portfolio$</div>
+    <div id="prompt2" class="inline-title prompt">:~$</div>
+    <div id="command2" class="typed-text inline-title stdin" style="--width: 25px; --time: 0.4s;">
+        ls
+    </div>
+    <br />
+</div>
+<div id="line3" class="console-line" style="width: 645px;">
+    aboutme.txt &nbsp;&nbsp;&nbsp;&nbsp; myskillset.txt &nbsp;&nbsp;&nbsp;&nbsp; socials.txt
+</div>
